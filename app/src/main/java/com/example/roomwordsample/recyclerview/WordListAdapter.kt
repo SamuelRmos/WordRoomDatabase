@@ -1,4 +1,4 @@
-package com.example.roomwordsample.RecyclerView
+package com.example.roomwordsample.recyclerview
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.roomwordsample.R
-import com.example.roomwordsample.Room.Word
+import com.example.roomwordsample.room.Word
 
 class WordListAdapter internal constructor(context: Context) : RecyclerView.Adapter<WordListAdapter.WordViewHolder>(){
 

@@ -1,8 +1,8 @@
-package com.example.roomwordsample.Repository
+package com.example.roomwordsample.repository
 
 import androidx.lifecycle.LiveData
-import com.example.roomwordsample.Room.Word
-import com.example.roomwordsample.Room.WordDao
+import com.example.roomwordsample.room.Word
+import com.example.roomwordsample.room.WordDao
 
 class WordRepository(private val wordDao: WordDao) {
 

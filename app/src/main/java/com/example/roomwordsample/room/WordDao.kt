@@ -1,11 +1,10 @@
-package com.example.roomwordsample.Room
+package com.example.roomwordsample.room
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.roomwordsample.Room.Word
 
 @Dao
 interface WordDao

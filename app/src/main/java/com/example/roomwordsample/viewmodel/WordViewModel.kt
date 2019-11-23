@@ -1,12 +1,12 @@
-package com.example.roomwordsample.ViewModel
+package com.example.roomwordsample.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.roomwordsample.Repository.WordRepository
-import com.example.roomwordsample.Room.Word
-import com.example.roomwordsample.Room.WordRoomDatabase
+import com.example.roomwordsample.repository.WordRepository
+import com.example.roomwordsample.room.Word
+import com.example.roomwordsample.room.WordRoomDatabase
 import kotlinx.coroutines.launch
 
 class WordViewModel(application: Application) : AndroidViewModel(application) {
@@ -17,7 +17,7 @@ class WordViewModel(application: Application) : AndroidViewModel(application) {
 
     init
     {
-        val wordsDao = WordRoomDatabase.getDatabase(application).wordDao()
+        val wordsDao = WordRoomDatabase.getDatabase(application, viewModelScope).wordDao()
         repository = WordRepository(wordsDao)
         allWords = repository.allWords
     }
