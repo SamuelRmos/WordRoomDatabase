@@ -1,4 +1,4 @@
-package com.example.roomwordsample
+package com.example.roomwordsample.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.roomwordsample.R
 import com.example.roomwordsample.recyclerview.WordListAdapter
 import com.example.roomwordsample.room.Word
 import com.example.roomwordsample.viewmodel.WordViewModel
