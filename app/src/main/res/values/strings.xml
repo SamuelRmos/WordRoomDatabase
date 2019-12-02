@@ -3,4 +3,8 @@
     <string name="hint_word">Word...</string>
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="e_mail">Email</string>
+    <string name="password">Password</string>
 </resources>

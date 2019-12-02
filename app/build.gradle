@@ -60,4 +60,14 @@ dependencies {
 
 // Testing
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
+
+// RXJava
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.rxcalladapter_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxjava_version"
+
+// Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofitVersion"
 }
